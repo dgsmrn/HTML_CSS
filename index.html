@@ -4,29 +4,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título da Página</title>
+    <title>Exercícios HTML</title>
 </head>
-<body>
+
+<!-- O atributo bgcolor modifica a cor de fundo de um elemento -->
+<body bgcolor="a5e8ff">
     <!-- A tag <br> insere uma quebra de linha no texto -->
     Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>Nostrum porro vero veniam labore exercitationem,
     mollitia blanditiis accusamus tenetur aut culpa qui quos. <br>Ab quasi laboriosam, aut quis id cupiditate consequuntur?<br><br>
 
     <!-- A tag <p></p> separa textos em blocos de parágrafos -->
-    <p><h1>Why do we use it?</h1>
+    <p><h1 >Why do we use it?</h1>
     Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br> has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     <!-- A tag <hr> cria uma linha horizontal que também separa textos -->
     <hr>
     <p><h2>is Lorem Ipsum?</h2>
     It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. <br>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. <br> desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.<br> Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-
+    
     <!-- A tag <h$> é utilizada para criação de títulos, contém 6 níveis sendo o 1  maior e o 6 menor -->
-    <h1>Título Nível 1</h1>
-    <h2>Título Nível 2</h2>
-    <h3>Título Nível 3</h3>
-    <h4>Título Nível 4</h4>
-    <h5>Título Nível 5</h5>
-    <h6>Título Nível 6</h6>
+        <h1>Título Nível 1</h1>
+        <h2>Título Nível 2</h2>
+        <h3>Título Nível 3</h3>
+        <h4>Título Nível 4</h4>
+        <h5>Título Nível 5</h5>
+        <h6>Título Nível 6</h6>
+        
+    <!-- A tag <b> e <strong> destaca uma palavra em negrito -->
+    <p><h2>is Lorem Ipsum?</h2>
+    It is a long <b>established</b> fact that a reader will be distracted by the <strong>readable</strong> content of a page when looking at its layout. </p>
+    
+    <!-- A tag <i> e <em> destaca uma palavra em itálico, sendo a tag <i> mais utilizada para termos técnicos ou expressões de outros idiomas. Já a tag <em> da enfâse maior ao destaque, principalmente quando falamos em acessibilidade. Para leitores de textos automáticos, utilizado principalmente por deficientes visuais a palavra é lida com maior intensidade -->
+    <p><h2>is Lorem Ipsum?</h2>
+    It is a long <b>established</b> fact that a <i>"reader"</i> will be distracted by the <strong>readable</strong> content of a <em>"page"</em> when looking at its layout. </p>
+    
+    <!-- A tag <u> sublinha uma palavra, a tag <sub> subscreve uma palavra e a tag <sup> sobresceve uma palavra -->
+    <p><h2>is Lorem Ipsum?</h2>
+    It is a <u>long</u> <b>established</b> <sub>fact</sub> that a <i>"reader"</i> <sup>will</sup> be distracted by the <strong>readable</strong> content of a <em>"page"</em> when looking at its layout. </p>
+
+    <!-- Listas não ordenadas são criadas com a as tags <ul> e <li> -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <!-- Listas ordenadas são criadas com as tags <ol> e <li> utilizada para clicar uma lista númerada neste exemplo -->
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ol>
+
+    <!-- Lista de definição utiliza as tags <dl> <dt> e <dd> utilizada para criar níveis e sub´niveis-->
+    <dl>
+        <dt>A Fundação</dt>
+        <dd>Fundação Bradesco, entidade filantrópica sem fins lucrativos</dd>
+    </dl>
+    
+    <!-- A tag <a> é utilizada para criação de links, o atributo href é o endereço de destino  -->
+    <a href="https://www.google.com">Google</a><br><br><br>
+
+    <!-- A tag <img> é utilizada para incluir imagens em uma página o atribudo alt é sua descrição e o atributo width é sua largura -->
+    <img src="https://www.w3.org/html/logo/img/html5-topper.png" alt="Logo html 5" width="300px">
+
+    <!-- Para criar uma tabela utilizamos as tags <table> para tabela <tr> para linha <td> para coluna <th> para título -->
+    
+    <table border="1">
+        <tr>
+            <th>Título 1</th>
+            <th>Título 2</th>
+        </tr>
+        <tr>
+            <td>Fundação Bradesco</td>
+            <td>Apostila</td>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>CSS</td>
+        </tr>
+    </table>
+
+    <!-- Formulários são criados com a tag <form> -->
+    <form action="" method="post">
+        <label>Text:</label>
+        <input type="text">
+        <label>Password:</label>
+        <input type="password">
+        <label>Textarea:</label>
+        <textarea></textarea>     
+        <hr>
+        <!-- input do tipo checkbox é utilizado para quando o usuário pode selecionar mais de uma opção -->
+        <input type="checkbox" name="opcao" value="selecta" checked>Clique para selecionar o A<br>
+        <input type="checkbox" name="opcao" value="selectb">Clique para selecionar o B<br>
+        <hr>
+        <!-- input do tipo radio é utilizado quando o usuário pode selecionar apenas um aopção, seu atributo name precisa ser obrigatoriamente igual dentro de um grupo de seleção única -->
+        <input type="radio" name="opcao" value="selecta" checked>Masculino
+        <input type="radio" name="opcao" value="selectb">Feminino
+        <button type="submit">Cadastrar</button>
+        <button type="reset">Limpar</button>
+    </form>
+
+    <!-- A tag select cria uma lista no formato dropdown -->
+    <hr>
+    <select name="" id="">
+        <option value="verde">verde</option>
+        <option value="vermelho">vermelho</option>
+        <option value="azul">azul</option>
+        <option value="alpha">alpha</option>
+    </select>
+    <br>
+    <label>Campo visível:</label>
+    <input type="text"><br>
+    <label>Campo invisível:</label>
+    <input type="hidden" name="pais" value="Brasil"><br>
+
+    
 
 
+
+    
+
+
+
+
+    
 </body>
 </html>
