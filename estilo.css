@@ -1,0 +1,20 @@
+/* Altera as cores dos títulos h3 para roxo e tamanho 30px */
+h3{
+    color: rgb(110, 16, 148);
+    font-size: 30px;
+}
+
+body{
+    background-color: #a5e8ff;
+    background-image: url("https://www.w3.org/html/logo/img/html5-topper.png");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 300px;
+}
+
+ul {
+    list-style-type: circle;
+    list-style-position: outside;
+    list-style-image: url("https://icons.iconarchive.com/icons/aha-soft/3d-social/16/Plus-icon.png");
+    }
