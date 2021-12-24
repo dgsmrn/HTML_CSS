@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    URL: Uniform Resource Locator
+        -https://www.google.com.br
+        -sequência de texto que define onde algo está localizado na web
+    URL usam caminhos para encontrar arquivos
+    Caminhos dos arquivos
+        -onde, no explorador de arquivos um recurso está localizado 
+    -->
+
+    <a href="rs_hyperlinks.html" target="_blank">Abrir Hyperlinks</a><br>
+    <a href="http://google.com" target="_blank">Abrir o Google</a><br>
+
+    <!-- 
+        COMO NAVEGAR PELOS CAMINHOS
+            Mesmo diretório
+            Entrando em diretórios
+            Saindo de diretórios
+            Diretório raiz (root ou pai)
+    -->
+
+    <a href="rs_hyperlinks.html">Arquivo na mesma pasta</a><br>
+    <a href="./rs_hyperlinks.html">Arquivo no diretório raiz</a><br>
+    <a href="outros/rs_hyperlinks.html">Arquivo na pasta outros</a><br>
+    <a href="../outros/rs_hyperlinks.html">Arquivo em uma pasta fora do diretório</a><br>
+    
+    <!-- 
+        Absoluto
+            -inclui protocolo e nome de domínio
+            -http://www.google.com/projeto/index.html
+            -sempre apontara para o mesmo local, pois é absoluto
+        Relativo
+            -relativo à página aberta no momento
+            -apontará para lugares diferentes
+    -->
+    <a href="google.com">relativo: ir para o Google</a><br>
+    <a href="http://google.com">absoluto: ir para o Google</a>
+    
+</body>
+</html>
