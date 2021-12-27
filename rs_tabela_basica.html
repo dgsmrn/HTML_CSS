@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 
+    Prós 
+    -É recomendada para visualização de dados via linha e colunas 
+    -Boa acessibilidade para leitura de dados 
+    
+    Contras 
+    -Pouco Flexível 
+    -Precisa de estilização para melhor visualização 
+    
+    Não usar
+    -Para clicar seu layout
+    
+    <table> é para tabela 
+    <tr> é para linha 
+    <th> é para cabeçalho da tabela 
+    <td> é para linha da tabela
+    
+    Tags que auxiliam na acessibilidade:
+    <caption> descreve o por que da tabela
+    <thead> Cabeçalho da tabela
+    <tbody> Corpo da tabela
+    <tfoot> Rodapé da tabela
+
+-->
+
+    <table>
+        <caption>Pessoas Por idade</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Mayk</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>Diego</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total:</td>
+                <td>2 Pessoas</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <hr>
+
+    <!--
+        2 Lojas
+        Quantos produtos foram produzidos, quantos vendidos e agrupado por nome de produto
+    -->
+
+    <table>
+        <caption>Produzidos x Vendidos por loja</caption>
+        
+        <!-- 
+            <colgroup> tag utilizada para agrupar colunas, é util para acessibilidade e aplicação de css
+         -->
+
+        <colgroup>
+            <col>
+            <col span="2" style="background-color: red;">
+            <col span="2" style="background-color: blue;">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                
+                <!--
+                    scope="colgroup" atributo que informa a existência de um agrupamento de colunas nos nomes das lojas, é útil em acessibilidade
+                
+                -->
+
+                <th colspan="2" scope="colgroup">Afonso Pena</th>
+                <th colspan="2" scope="colgroup">Antonia Pereira</th>
+            </tr>
+
+            <tr>
+                
+                <!-- 
+                 scope="col" atributo que informa que o escopo de cada cabeçalho é de coluna
+                 -->
+
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <!-- 
+                    scope="row" atributo que informa que é um escopo de cabeçalho de linha
+                 -->
+                
+                <th scope="row">Vassouras</th>
+                <td>50</td>
+                <td>30</td>
+                <td>20</td>
+                <td>20</td>
+            </tr>
+
+            <tr>
+                <th scope="row">Baldes</th>
+                <td>10</td>
+                <td>10</td>
+                <td>30</td>
+                <td>25</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+
+</html>
