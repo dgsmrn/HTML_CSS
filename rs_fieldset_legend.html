@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <fieldset>
+        Agrupamento de campos
+        Mesmo próposito
+        Semântico
+        Acessibilidade
+    
+    Atributos especiais
+        Disabled
+            Desabilita todos elementos internos
+            Não serão enviados ao submeter o formulário
+            
+        Form
+            O id de um formulárioao qual este fieldset pertence
+            Não precisa estar dentro do formulário
+        Name
+            nome do grupo
+            
+        <legend>
+            Nome do agrupamento
+            Primeiro elemento dentro do fieldset
+     -->
+
+    <form action="">
+        <fieldset>
+            <legend>Contato</legend>
+            <label for="">Nome</label>
+            <input type="text">
+        </fieldset>
+    </form>
+    
+    <div style="height: 50px;"></div>
+    
+    <form id="telefone" action="">
+        <button>Enviar</button>
+    </form>
+
+    <fieldset form="telefone" name="input-telefone">
+        <legend>Telefone</legend>
+        <label for="">Número</label>
+        <input type="text">
+    </fieldset>
+
+</body>
+
+</html>
