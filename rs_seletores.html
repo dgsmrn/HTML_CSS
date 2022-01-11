@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Element selector*/
+        h1 {
+            color: blue;
+            font-size: 60px;
+        }
+
+        p {
+            color: green;
+        }
+
+        /* ID Selector */
+        #title {
+            color: yellow;
+        }
+
+        #content {
+            color: orange;
+        }
+
+        /* Class Selector */
+        .red{
+            color: red;
+        }
+
+        /* Attribute Selector */
+        [title]{
+            color: purple
+        }
+
+        /* Pseudo-class Selector */
+        p:hover {
+            color: red;
+        }
+
+        /* Múltiplos */
+        h3, h4 {
+            color: blue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- 
+        SELETORES
+        Conecta um elemento HTML com o CSS a fim de alterar o elemento.
+
+        TIPO
+        
+        Element selector
+            todos os elementos HTML
+
+        ID Selector
+            Um elemento que tenha um atribudo 'id'
+            Cada id deverá ser único na página. (pode repetir se for de outro nome)      
+            
+        Class Selector
+            Os elementos que contenha um atributo 'class'
+            Podemos ter uma ou mais classes.
+        
+        Attribute selector
+            Um elemento que tenha um atributo específico
+            É um atributo global pode ser colocado em qualquer lugar da página
+            Quando descansamos o mouse sobre um elemento com title é mostrado seu conteúdo
+
+        Pseudo-class selector
+            Elementos em um estado específico
+
+        MÚLTIPLOS
+        Você poderá selecionar múltiplos elementos e aplicar alguma regra css para todos eles.
+
+        Usamos uma separação por vírgulas para isso.
+     -->
+    
+    <h1>Element Selector</h1>
+    <p>Conteúdo da minha página</p>
+    
+    <h2 id="title">ID Selector</h2>
+    <p id="content">Conteúdo da minha página</p>
+
+    <h2 class="red">Class Selector</h2>
+    <p class="red">Conteúdo da minha página</p>
+
+    <h2 title="titulo">Attribute Selector</h2>
+    <p title="titulo">Conteúdo da minha página</p>
+
+    <h2>Pseudo-class Selector</h2>
+    <p>Conteúdo da minha página</p>
+
+    <h3>Múltiplos</h3>
+    <h4>Conteúdo da Minha página</h4>
+
+</body>
+</html>
