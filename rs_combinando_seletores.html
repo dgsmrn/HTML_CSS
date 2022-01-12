@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* DESCENDANT COMBINATOR */
+        body article h2{
+            color:red;
+        }
+        
+        /* CHILD COMBINATOR */
+        body > ul > li{
+            color: blue;
+        }
+
+        /* ADJACENT SIBLING COMBINATOR */
+        h1 + p {
+            color: red;
+        }
+        button + button {
+            margin-left: 32px;
+        }
+
+        /* GENERAL SIBLING COMBINATOR */
+        h2 ~ p {
+            color: green;
+        }
+
+        /* UTILIZANDO COMBINADORES */
+        ul > li[class="red"]{
+            color: red;
+        }        
+
+    </style>
+</head>
+<body>
+    <!--    COMBINATORS
+            Combinatores, pois eles trabalham para buscar e combinar seletores a fim de aplicar uma estilização
+
+            DESCENDANT COMBINATOR
+            Identificado por um espaço entre os seletores
+            Busca um elemento dentro de outro
+            Aceita tags no meio da sequência
+            --body artcile h2
+
+            CHILD COMBINATOR
+            Identificado pelo sinal > entre dois seletores
+            Seleciona somente o elemento que é filho direto do pai
+            Elementos depois do filho direto serão desconsiderados
+            Não aceita tags no meio da sequência
+            --body > ul > li
+
+            ADJACENT SIBLING COMBINATOR
+            Identificado pelo sinal '+' entre dois seletores
+            Seleciona somente o elemento do lado direto que é irmão direto na hierarquia
+            --h1 + p
+
+            GENERAL SIBLING COMBINATOR
+            Identificado pelo sinal '~' entre dois seletores
+            Seleciona todos os elementos irmãos
+            -- h1~p
+
+            UTILIZANDO COMBINADORES
+            ul > li [class="red"]
+
+            DICA
+            Seletores muito específicos tendem a causar dificuldades no reuso das regras de estilização dos elementos
+            Muitas vezes, um simples uso de classes, torna o trabalho muito mais eficiente
+
+     -->
+<article>
+    <h2>DESCENDANT COMBINATOR</h2>
+</article>
+
+<article>
+    <h2>Outro título</h2>
+</article>
+
+<ul>
+    <li>CHILD COMBINATOR</li>
+    <ul>
+        <li>CHILD COMBINATOR</li>
+    </ul>
+</ul>
+
+<h1>ADJACENT SIBLING COMBINATOR</h1>
+<p>ADJACENT SIBLING COMBINATOR</p>
+<p>ADJACENT SIBLING COMBINATOR2</p>
+<button>Um botão</button>
+<button>Outro click</button>
+
+<h2>GENERAL SIBLING COMBINATOR</h2>
+<p>GENERAL SIBLING COMBINATOR</p>
+<p>GENERAL SIBLING COMBINATOR2</p>
+<button>Um botão</button>
+<p>GENERAL SIBLING COMBINATOR2</p>
+
+<ul>
+    <li>Alooo</li>
+    <li class="red">Heyy</li>
+</ul>
+
+</body>
+</html>
