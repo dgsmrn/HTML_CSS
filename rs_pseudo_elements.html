@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li::before {
+            content: "> ";
+        }
+
+        li::after {
+            content: ";";
+        }
+        
+        p:nth-of-type(2)::first-line{
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!--  PSEUDO-ELEMENTS
+            Com pseudo-elements nós podemos adicionar elementos html pelo próprio CSS
+            ::pseudo-element-name
+
+            EXEMPLOS
+            ::before
+            ::After
+            ::first-line
+
+            REFERÊNCIA
+            https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-elements
+        -->
+
+    <li>Gratidão</li>
+    <li>Esperança</li>
+    <li>Fé</li>
+    <li>Liberdade</li>
+
+    <p>Ser grato é ter reconhecimento de que alguém o auxiliou de alguma forma. É perceber naturalmente os
+        benefícios que fizeram a seu favor.</p>
+    <p>É quando você recebe uma ajuda, direta ou indiratamente, e consegue creditar na outra pessoa, o gesto de
+        bondade.</p>
+    <p>A gratidão deveria ser um sentidmento nato, plantado, dentro de cada ser humano.</p>
+</body>
+
+</html>

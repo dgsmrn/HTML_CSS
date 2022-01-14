@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Seleciona o primeiro filho independente do seletor */
+        ul li:first-child {
+            font-weight: bold;
+            color: red;
+        }
+
+        /* Seleciona o P número 1 dentro do article */
+        article p:nth-of-type(1) {
+            font-weight: bold;
+            font-size: 18px;
+
+        }
+
+        /* Seleciona o filho do article independente da tag 
+            Neste caso só existe o P filho de número 2, 3 e 4
+            E h3 só existe o 1
+        */
+        article p:nth-child(4) {
+            font-weight: bold;
+            font-size: 18px;
+
+        }
+
+        /* odd aplica nos itens impares e even nos pares*/
+        ul li:nth-child(odd){
+            color: black;
+            background: #eee;
+        }
+        ul li:nth-child(even){
+            color: gray;            
+        }
+
+        a:hover{
+            color:red;            
+        }
+
+        input:focus{
+            border-color: blue;
+            outline: none;
+        }
+
+        input:disabled{
+            background-color: green;
+        }
+
+        input:required{
+            background-color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- PSEUDO-CLASSES
+            É um tipo de seletor que irá selecionar um elemento que estiver em um estado específico.
+            Exemplo: É o primeiro elemento dentor de uma caixa, ou, o elemento está com o ponteiro do mouse em cima dele.
+            Pseudo-classes começam com 2 pontos seguidos do nome da pseudo class
+            :pseudo-class-name
+        
+        SELECIONANDO ELEMENTOS COM PSEUDO-CLASSES
+            :first-child
+            :nth-of-type()
+            :nth-child() odd even
+            
+        AÇÕES DO USUÁRIO
+            :hover
+            :focus
+
+        ATRIBUTOS
+            :disabled
+            :required
+
+        REFEERÊNCIA
+        https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes       
+
+     -->
+    <ul>
+        <h3>Palavras Bonitas</h3>
+        <li>Gratidão</li>
+        <li>Esperança</li>
+        <li>Fé</li>
+        <li>Liberdade</li>
+        <li>Gratidão</li>
+        <li>Esperança</li>
+        <li>Fé</li>
+        <li>Liberdade</li>
+    </ul>
+
+    <article>
+        <h3>Gratidão</h3>
+        <p>Ser grato é ter reconhecimento de que alguém o auxiliou de alguma forma. É perceber naturalmente os
+            benefícios que fizeram a seu favor.</p>
+        <p>É quando você recebe uma ajuda, direta ou indiratamente, e consegue creditar na outra pessoa, o gesto de
+            bondade.</p>
+        <p>A gratidão deveria ser um sentidmento nato, plantado, dentro de cada ser humano.</p>
+    </article>
+    
+    <input type="text" disabled>
+    <input type="text" required><br>
+    <a href="">Clique Aqui</a>
+
+</body>
+
+</html>
