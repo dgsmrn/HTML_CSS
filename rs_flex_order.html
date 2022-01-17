@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            display: flex;                        
+            border: 1px dashed red;            
+        }
+
+        .box div {
+            border: 1px solid;            
+        }
+
+        .box div:nth-child(1){
+            order: 0;
+        }
+        .box div:nth-child(2){
+            order: 1;
+        }
+        .box div:nth-child(3){
+            order: 0;
+        }
+        .box div:nth-child(4){
+            order: -1;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Order
+            Ordenar elementos dentro de uma caixa, por padrão todos são order 0, se adicionarmos 1 como ele é maior que 0 enviará o item para o final da lista. Se colocarmos -1 como é menor que zero, o item será colocado no início da lista. -->
+
+    <div class="box">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            display: flex;
+            border: 1px dashed red;
+        }
+
+        .box div {
+            border: 1px solid;
+        }
+
+        .box div:nth-child(2),
+        .box div:nth-child(3) {
+            flex-grow: 1;
+        }
+
+        .box div:nth-child(1) {
+            flex-grow: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Flex-grow: O crescimento do item dentro do container em relação aos espaços vazios. Caso haja mais de um elemento com o flex grow será considerado partes da fração, quando declarado 1 será equivalente a uma parte da divisão do espaço, já quando declarado 2 será equivalente a 2 partes da fração do espaço vazio. -->
+
+    <div class="box">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+</body>
+
+</html>

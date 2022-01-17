@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .page {
+            border: 2px solid;
+            min-height: 100vh;
+            display: flex;
+        }
+
+        aside {
+            color: black;
+            background: lightgreen;
+            flex: 1;
+        }
+
+        main {
+            color: black;
+            background: lightblue;
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main section:nth-child(1) {
+            background: lightgoldenrodyellow;
+            flex: 2;
+        }
+
+        main section:nth-child(2) {
+            background: lightsalmon;
+            flex: 0 80px;
+        }
+
+        main section:nth-child(3) {
+            background: lightpink;
+            flex:1 ;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Flex
+        Shorthand de flex-grow, flex-shrink e flex-basis, podem ter 1, 2 ou 3 valores.
+	    
+        Se declarado apenas 1 número será assumido flex grow. E assumirá que shrink=1 e basis=0  (1 1 0)
+
+	    Se declarado 2 valores ele assumira o grow como primeiro e de acordo coma  unidade de medida definirá shrink ou basis
+
+	    Se declarado 3 valores será grow > shrink > basis
+ -->
+
+    <div class="page">
+        <aside>Aside</aside>
+        <main>
+            Main
+            <section>Content 1</section>
+            <section>Content 2</section>
+            <section>Content 3</section>
+        </main>
+    </div>
+
+</body>
+
+</html>
