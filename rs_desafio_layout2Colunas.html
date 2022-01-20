@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            display: flex;
+            gap: 1rem;
+            height: 100vh;
+        }
+
+        div{
+            border: gray solid 1px;
+        }
+        div:nth-child(1){            
+            flex-grow: 1;
+        }
+        div:nth-child(2){            
+            flex-grow: 3;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Crie um layout com 2 colunas, uma ao lado da outra
+        A coluna da esquerda deverá ter 25% de tamanho e a coluna da direita deverá ocupar todo o espaço que sobra.
+        Faça uma separação de 1rem entre os elementos
+     -->
+
+     <div class="box">
+         <div>A</div>
+         <div>B</div>
+     </div>
+
+
+</body>
+</html>
